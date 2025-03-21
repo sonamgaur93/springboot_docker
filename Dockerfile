@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/springboot_docker-1.0.0.jar app.jar
 
 # Expose application port
-EXPOSE 8080
+EXPOSE 8081
 
 # Run the application
 CMD ["java", "-jar", "app.jar"]
