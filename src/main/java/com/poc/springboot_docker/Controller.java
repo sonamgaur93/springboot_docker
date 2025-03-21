@@ -12,6 +12,10 @@ public class Controller {
     public String get(){
         return "hello";
     }
+    @GetMapping("/webhook")
+    public String webhook(){
+        return "webhook working";
+    }
 
     @GetMapping("/webhook")
     public String webhook(){
