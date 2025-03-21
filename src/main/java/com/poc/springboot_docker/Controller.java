@@ -17,9 +17,4 @@ public class Controller {
         return "webhook working";
     }
 
-    @GetMapping("/webhook")
-    public String webhook(){
-        return "webhook working";
-    }
-
 }
