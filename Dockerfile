@@ -5,10 +5,10 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the built JAR file into the container
-COPY target/springboot_docker-1.0.0.jar
+COPY target/springboot_docker-1.0.0.jar app.jar
 
 # Expose application port
 EXPOSE 8080
 
 # Run the application
-CMD ["java", "-jar", "springboot_docker-1.0.0.jar"]
+CMD ["java", "-jar", "app.jar"]
